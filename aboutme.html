@@ -27,14 +27,19 @@
     }
   </style>
   <title>About Me</title>
+  <script>
+  function aboutMe(){
+    document.getElementById("demo").innerHTML = "I am UnusualNapkin, an aspiring programming student. I like video games, reading, and writing. I especially like role playing (video) games.";
+  }
+  </script>
 </head>
 
  <div id = "about">
     <h1>About Me</h1>
-      <p style="font-family:verdana;">I am UnusualNapkin, an aspiring programming student. I like video games, reading, and writing.
-       I especially like role playing (video) games.
+      <p style="font-family:verdana;" id = "demo">
+        Click the button.
       </p>
-      <p id="demo"></p>
+      <button type="button" onclick="aboutMe()">Click to learn about me.</button>
  </div>
 
   <div id = "webpage">
