@@ -1,6 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
     body {background-color: #ccffcc;}
     h1 {color: blue;}
@@ -12,15 +17,12 @@
     }
     #webpage{
       width: 100%;
-      background-color: violet;
     }
     #Scratch{
       width: 100%;
-      background-color: aqua;
     }
     #Python{
       width: 100%;
-      background-color: orange;
     }
     #robotics{
       width: 100%;
@@ -34,9 +36,9 @@
   </script>
 </head>
 
-<script>
-window.alert("Welcome to my website!");
-</script>
+  <script>
+  window.alert("Welcome to my website!");
+  </script>
 
  <div id = "about">
     <h1>About Me</h1>
@@ -61,18 +63,65 @@ window.alert("Welcome to my website!");
     <h3>Scratch Projects</h3>
       <p style="font-family:verdana;">I made some basic projects in Scratch. They can be used as a reference.</p>
 
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="drawshape.JPG" alt="Scratch Draws Shapes">
+            <div class="carousel-caption">
+              <h3>Scratch Draws Shapes</h3>
+              <p>Draw shapes with user input</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="ponglite.JPG" alt="Pong Lite">
+            <div class="carousel-caption">
+              <h3>Pong Lite</h3>
+              <p>Play Pong in browser. Supports 1 and 2 player games or AI.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="castlerunner.JPG" alt="Castle Runner">
+            <div class="carousel-caption">
+              <h3>Castle Runner: Dodge the Bugs!</h3>
+              <p>An endless runner where you jump to avoid bugs.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
       <pre>
       <a href="https://scratch.mit.edu/projects/167448203/" style = "font-family:verdana;">Scratch Draws Shapes</a>
 
-      <img src="drawshape.JPG" alt="Scratch Draws Shapes" style="width:200px;height:200px;">
+      <!-- <img style="width:200px;height:200px;"> -->
 
       <a href="https://scratch.mit.edu/projects/167475393/" style = "font-family:verdana;">Pong Lite</a>
 
-      <img src="ponglite.JPG" alt="Pong Lite" style="width:200px;height:200px;">
+      <!-- <img style="width:200px;height:200px;"> -->
 
       <a href="https://scratch.mit.edu/projects/167592411/" style = "font-family:verdana;">Castle Runner: Dodge the Bugs!</a>
 
-      <img src="castlerunner.JPG" alt="Castle Runner" style="width:200px;height:200px;">
+      <!-- <img style="width:200px;height:200px;"> -->
       </pre>
   </div>
 
@@ -80,21 +129,67 @@ window.alert("Welcome to my website!");
     <h4>Python</h4>
       <p style="font-family:verdana;">I made some stuff in Python for my own use and as a demonstrator.</p>
 
+      <div id="secondCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#secondCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#secondCarousel" data-slide-to="1"></li>
+          <li data-target="#secondCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="zombies.JPG" alt="Zombies">
+            <div class="carousel-caption">
+              <h3>Zombies</h3>
+              <p>A text adventure where you kill zombies.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="recolored.jpg" alt="After">
+            <div class="carousel-caption">
+              <h3>Obamicon</h3>
+              <p>Changes any image to the style of Barack Obama's "Hope" poster. Original image by Karl O'Lynch von Town</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="pythonshape.JPG" alt="Python Shape Drawer">
+            <div class="carousel-caption">
+              <h3>Python Shape Drawer</h3>
+              <p>Draws shapes and changes color based on user input.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#secondCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#secondCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
       <pre>
       <p style = "font-family:verdana;">A Zombie Text Adventure game with choices</p>
 
-      <img src="zombies.JPG" alt="Zombies" style="width:969;height:163px;">
+      <!-- <img style="width:969;height:163px;"> -->
 
       <p style = "font-family:verdana;">A program to change any image into the style/coloring of Obama's "Hope" Poster</p>
 
-      <img src="o'lynch-winter.jpg" alt="Before" style="width:300px;height:300px;">
+      <!-- <img src="o'lynch-winter.jpg" alt="Before" style="width:300px;height:300px;"> -->
 
-      <img src="recolored.jpg" alt="After" style="Width:300px;height:300px;"
+      <!--<img  style="Width:300px;height:300px;"-->
 
 
       <p style = "font-family:verdana;">A shape drawer like Scratch Draws Shapes</p>
 
-      <img src="pythonshape.JPG" alt="Python Shape Drawer" style="Width:400px;height:300px;">
+      <!--<img  style="Width:400px;height:300px;">-->
       </pre>
   </div>
 
@@ -102,11 +197,10 @@ window.alert("Welcome to my website!");
     <h5>Robotics</h5>
     <p style = "font-family:verdana;">Coding done through Arduino</p>
 
-    <pre>
     <p style = "font-family:verdana;">"Singing" Robot</p>
     <p style = "font-family:verdana;">Dancing robot</p>
     <p style = "font-family:verdana;">Making a robot that can move and sense its surroundings</p>
-    </pre>
+
   </div>
 
 </body>
