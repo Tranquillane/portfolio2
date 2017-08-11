@@ -1,0 +1,22 @@
+<style>
+  body {background-color: #ccffcc;}
+  h1 {color: blue;}
+  h2 {color: black;}
+  h3 {color: red;}
+  #about{
+    width: 100%;
+    background-color: aqua;
+  }
+  #webpage{
+    width: 100%;
+  }
+  #Scratch{
+    width: 100%;
+  }
+  #Python{
+    width: 100%;
+  }
+  #robotics{
+    width: 100%;
+  }
+</style>
